@@ -1,5 +1,7 @@
 package com.hemebiotech.analytics;
 
+import java.util.List;
+import java.util.Map;
 
 /**
  * 
@@ -9,6 +11,13 @@ package com.hemebiotech.analytics;
  */
 
 public interface ISymptomCounter {
+	/**
+	 * 
+	 * @param listOfSymptoms : list of the symptoms
+	 * @return map of the symptoms as key and their occurence as value
+	 */
+
+	Map<String, Integer> symptomsCounter(List<String> listOfSymptoms);
 
 	
 

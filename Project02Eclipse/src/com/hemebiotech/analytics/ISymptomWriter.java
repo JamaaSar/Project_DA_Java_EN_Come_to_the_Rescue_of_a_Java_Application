@@ -1,5 +1,6 @@
 package com.hemebiotech.analytics;
 
+import java.util.Map;
 
 /**
  * 
@@ -8,6 +9,13 @@ package com.hemebiotech.analytics;
  */
 
 public interface ISymptomWriter {
+	
+	
+	/**
+	 * @param sorted : sorted map of the symptoms and their occurences
+	 * @param file name
+	 */
+	void writeInDoc(Map<String, Integer> mapOfSymptoms, String fileName);
 	
 	
 
