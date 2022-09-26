@@ -9,7 +9,7 @@ public class AnalyticsCounter {
 	public static void main(String args[]) throws Exception {
 		
 		String filePath = "symptoms.txt";
-		String outputFilePath = "result.out";
+		String outputFilePath = "results.out";
 		
 
 		Analyse analyse = new Analyse(new ReadSymptomDataFromFile() , new CountSymptomsOccurences(), new OrderSymptoms(), new WriteInDocument());
